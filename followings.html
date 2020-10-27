@@ -148,25 +148,27 @@
                             <li><a href="publish/post">
                                     <span class="mr-3"><i class="fas fa-pen"></i></span>Write post</a>
                             </li>
-                            <li class="item-deivide"><a href="publish/series" >
-                                <span class="mr-3"><i class="fas fa-list-ul"></i></span>New Series</a>
-                            </a></li>
-                            <li class="item-deivide"><a href="question/ask" >
-                                <span class="mr-3"><i class="fas fa-question-circle"></i></i></span>Ask question</a>
-                            </a></li>
+                            <li class="item-deivide"><a href="publish/series">
+                                    <span class="mr-3"><i class="fas fa-list-ul"></i></span>New Series</a>
+                                </a></li>
+                            <li class="item-deivide"><a href="question/ask">
+                                    <span class="mr-3"><i class="fas fa-question-circle"></i></i></span>Ask question</a>
+                                </a></li>
                         </ul>
-                        <button type="button" id="write-btn" class="button el-button el-button--text text-muted"><i class="far fa-edit"
-                                data-toggle="tooltip" title="Write"></i></button>
-                        <span class="user-setting" id = "user-setting-btn">
+                        <button type="button" id="write-btn" class="button el-button el-button--text text-muted"><i
+                                class="far fa-edit" data-toggle="tooltip" title="Write"></i></button>
+                        <span class="user-setting" id="user-setting-btn">
                             <div class="el-popover user-menu__popover border d-none ">
                                 <div class="user-menu__top d-flex justify-content-between">
                                     <img src="./img/avartar/avartar01.jpeg" alt="user-img">
                                     <div class="flex-fill overflow-hidden">
                                         <div class="user-menu__info mb-3">
-                                            <div class="text-primary font-weight-bold text-truncate">Lộc Phúc Đinh</div>
+                                            <div class="text-primary font-weight-bold text-truncate">Lộc Phúc Đinh
+                                            </div>
                                             <div class="text-muted text-truncate">@sucanabo</div>
                                         </div>
-                                        <a href="user/edit" class="btn btn-primary text-light el-button--primary el.el-button--medium">Edit</a>
+                                        <a href="user/edit"
+                                            class="btn btn-primary text-light el-button--primary el.el-button--medium">Edit</a>
                                     </div>
                                 </div>
                                 <hr>
@@ -208,6 +210,61 @@
             </div>
         </nav>
     </header>
+    <main id="main-content">
+        <div class="banner">
+            <a href="#" target="blank">
+                <div style="background-color: #FEF3EB;">
+                    <div class="banner__container container w-100 px-0">
+                        <img src="./img/banner/banner001.png" alt="banner" class="banner__img">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="bg-dark pt-4 pb-4">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="feed-bar">
+                        <ul class="feed-links">
+                            <li class="feed-item link active"><a href="./followings.html">
+                                    <a href="./followings.html" class="link">
+                                        <div class="el-badge badge-new">followings
+                                            <sup class="el-badge__content el-badge__content--undefined fixed"></sup>
+                                        </div>
+                                    </a>
+                                </a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">newsets</a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">series</a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">editor's choice</a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">trending</a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">videos</a></li>
+                            <li class="feed-item"><a href="./followings.html" class="link">my clips</a></li>
+                        </ul>
+                    </div>
+                    <a href="publish/post" class="btn btn-primary float-right text-uppercase hidden-md-down">
+                        <span><i class="fas fa-pencil-alt"></i></span>&nbsp;CREATE POST
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="suggestion">
+            <div class="text-white text-center h3 font-weight-bold pt-4 pb-4 m-0"
+                style="background: linear-gradient(to right, rgb(138, 60, 82), rgb(106, 130, 251));">
+                <a href="https://viblo.asia/organization-feature?utm_source=viblo&amp;utm_medium=mod&amp;utm_campaign=mod_2020q1"
+                    target="_blank" rel="noopener" class="text-white">
+                    &gt;&gt;&gt; Promoting your Organization to Viblo's growing community &lt;&lt;&lt;
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pt-3 pb-1">
+                <div class="col-lg-9 pl-md-0" id="content-left">
+                    <!-- Hiện alert.html nếu chưa follow tag nào ./components/alert.html-->
+                    
+                </div>
+                <div class="col-lg-3 hidden-md-down px-0" id="content-right"></div>
+            </div>
+        </div>
+    </main>
     <script src="./vendor/jquery-3.5.1.min.js"></script>
     <script src="./vendor/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

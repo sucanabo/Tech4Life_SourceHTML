@@ -223,6 +223,7 @@ img,svg{
     height: 37px;
 }
 .el-popover{
+    display: none;
     position: absolute;
     min-width: 150px;
     top: 30px;
@@ -697,6 +698,9 @@ footer .link:hover {
 }
 .mobile-app-badges {
     margin: -8px 0px 0px -8px;
+}
+.play-store-badge {
+    width: 150px;
 }
 .app-store-badge {
     width: 130px;

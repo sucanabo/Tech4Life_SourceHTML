@@ -1,21 +1,69 @@
-// $(document).ready(function () {
-//   $("#annouce-btn").click(function () {
-//     $(".ann-popover").toggleClass("d-block")
-//   });
-//   $("#noti-btn").click(function () {
-//     $(".noti-popover").toggleClass("d-block")
-//   });
-//   $("#write-btn").click(function () {
-//     $("#write-dropdown").toggleClass("d-block")
-//   });
-//   $("#user-setting-btn").click(function () {
-//     $(".user-menu__popover").toggleClass("d-block")
-//   });
-// });
- var navController = document.querySelectorAll('.nav-control');
- var popovers = document.querySelectorAll('.popover');
-for(var i = 0; i < navController.length; ++i){
-  navController[i].addEventListener('click',function(e){
-    console.log(popovers[i]);
+//====================POPOVERS====================================
+$(document).ready(function () {
+  $("#annouce-btn").click(function () {
+    $(".ann-popover").toggleClass("d-block")
+  });
+  $("#noti-btn").click(function () {
+    $(".noti-popover").toggleClass("d-block")
+  });
+  $("#write-btn").click(function () {
+    $("#write-dropdown").toggleClass("d-block")
+  });
+  $("#user-setting-btn").click(function () {
+    $(".user-menu__popover").toggleClass("d-block")
+  });
+  $(".post-menu__btn").click(function () {
+    $(".el-dropdown-menu").toggleClass("d-block")
+  });
+  $(".comment__menu > span").click(function () {
+    $(".comment__menu >.el-dropdown-menu").toggleClass("d-block")
+  });
+});
+//==================TOGGLE NAV MOBILE==================================
+const feedlinks = document.querySelector('.feed-links');
+const hamburger = document.querySelector('.hamburger');
+const closeBtn = document.querySelector('.close-btn');
+if(hamburger){
+  hamburger.addEventListener("click",()=>{
+    feedlinks.classList.toggle("open");
+  });
+  closeBtn.addEventListener("click",()=>{
+    feedlinks.classList.toggle("open");
   });
 }
+//===================SCROLL EVENT=======================
+var topBtn = document.querySelector(".top-btn");
+var avt_side = document.querySelector(".avatar--side");
+window.onscroll = function(){scrollFunction()};
+function scrollFunction() {
+  myScrollY(topBtn,300,"flex");
+  myScrollY(avt_side,200,"inline");
+
+}
+function myScrollY(element,y,display){
+  if (document.body.scrollTop > y || document.documentElement.scrollTop > y) {
+    element.style.display = display;
+  } else {
+    element.style.display = "none";
+  }
+}
+function goToTop(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop =0;
+}
+  //==================TAB===============================
+  function openTab(e,tab){
+    var i,tabLink,tabContent;
+    tabContent = document.querySelectorAll(".tab__pane");
+    for(i = 0;i < tabContent.length; i++){
+      tabContent[i].style.display = "none";
+    }
+    tabLink = document.querySelectorAll(".tab-item");
+    for(i = 0;i< tabLink.length; i++){
+      tabLink[i].className = tabLink[i].className.replace(" active", "");
+    }
+    document.getElementById(tab).style.display = "block";
+    e.target.className += " active";
+  }
+  document.getElementById("default-comment__tab").click();
+

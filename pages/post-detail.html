@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../vendor/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.ico" />
+    <title>Post Title</title>
+</head>
+
+<body>
+    <a class="top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <header class="main-navbar main-navbar__group py-1">
+        <nav class="main-navbar__container container px-md-0">
+            <div class="main-navbar__left">
+                <a href="../index.html" class="main-navbar_logo mr-lg-5 d-block">
+                    <img src="https://cdn.viblo.asia/_nuxt/img/fbfe575.svg" alt="logo">
+                </a>
+                <ul class="main-menu ">
+                    <li class="main-menu__item"><a href="" class="link">
+                            <div class="el-badge badge-new">
+                                Post
+                                <!-- <sup class="el-badge__content el-badge dot fixed"></sup> -->
+                            </div>
+
+                        </a></li>
+                    <li class="main-menu__item"><a href="" class="link">
+                            <div class="el-badge badge-new">
+                                Question
+                                <sup class="el-badge__content el-badge dot fixed"></sup>
+                            </div>
+
+                        </a></li>
+                    <li class="main-menu__item"><a href="" class="link">
+                            <div class="el-badge badge-new">
+                                Disscussions
+                                <!-- <sup class="el-badge__content el-badge dot fixed"></sup> -->
+                            </div>
+
+                        </a></li>
+                </ul>
+            </div>
+            <div class="main-navbar__right">
+                <div class="sb mr-1 flex-fill">
+                    <input type="text" placeholder="Search Viblo" class="sb__input" />
+                    <button class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="main-navbar__group">
+                    <span class="flyout announcement-flyout mr-1">
+                        <div class="el-badge">
+                            <button class="button el-button el-button--text text-muted nav-control" id="annouce-btn"><i
+                                    class="fa fa-info"></i></button>
+                            <div class="el-popover flyout-popover ann-popover nav-popo">
+                                <div class="flyout__header">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="text-dark">Announcements</span>
+                                        <a class="link" href="#" title="Mark all as read" data-toggle="tooltip">Mark all
+                                            as read</a>
+                                    </div>
+                                </div>
+                                <div class="flyout__body">
+                                    <div class="announce__container">
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo bổ sung chức năng Content Listening, tích hợp Creative
+                                                Common copy right licenes</span>
+                                            <small class="subtext">Sep 4th, 3:36 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CTF: "Xoắn não" hôm nay cùng 3 Puzzle mới trên hệ thống!</span>
+                                            <small class="subtext">Aug 19th, 1:12 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CV: Trải nghiệm nhiều mẫu CV mới - "Độc mà Lạ"!</span>
+                                            <small class="subtext">Aug 14th, 3:01 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>FAQ: Những câu hỏi thường gặp với Viblo Mayfest</span>
+                                            <small class="subtext">May 11th, 10:18 AM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CV: Trải nghiệm nhiều mẫu CV mới - "Độc mà Lạ"!</span>
+                                            <small class="subtext">Aug 14th, 3:01 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>FAQ: Những câu hỏi thường gặp với Viblo Mayfest</span>
+                                            <small class="subtext">May 11th, 10:18 AM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CV: Trải nghiệm nhiều mẫu CV mới - "Độc mà Lạ"!</span>
+                                            <small class="subtext">Aug 14th, 3:01 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>FAQ: Những câu hỏi thường gặp với Viblo Mayfest</span>
+                                            <small class="subtext">May 11th, 10:18 AM</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flyout__footer">
+                                    <div class="text-right">
+                                        <a href="../pages/accnoucement.html">All accnoucements</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <sup class="el-badge__content fixed">6</sup>
+                        </div>
+                    </span>
+                    <span class="flyout notifications-flyout mr-1">
+                        <div class="el-badge">
+                            <button class="button el-button el-button--text text-muted nav-control" id="noti-btn"><i
+                                    class="far fa-bell"></i></button>
+                            <div class="el-popover flyout-popover noti-popover nav-popo">
+                                <div class="flyout__header">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="text-dark">Notifications</span>
+                                        <a href="#"><i class="fas fa-cog"></i></a>
+                                    </div>
+                                </div>
+                                <div class="flyout__body">
+                                    <div class="announce__container">
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo bổ sung chức năng Content Listening, tích hợp Creative
+                                                Common copy right licenes</span>
+                                            <small class="subtext">Sep 4th, 3:36 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CTF: "Xoắn não" hôm nay cùng 3 Puzzle mới trên hệ thống!</span>
+                                            <small class="subtext">Aug 19th, 1:12 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>Viblo CV: Trải nghiệm nhiều mẫu CV mới - "Độc mà Lạ"!</span>
+                                            <small class="subtext">Aug 14th, 3:01 PM</small>
+                                        </a>
+                                        <a href="#" class="announce__item">
+                                            <span>FAQ: Những câu hỏi thường gặp với Viblo Mayfest</span>
+                                            <small class="subtext">May 11th, 10:18 AM</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flyout__footer">
+                                    <div class="text-center">
+                                        <a href="../pages/notifications.html">See All</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <sup class="el-badge__content">6</sup> -->
+                        </div>
+                    </span>
+                </div>
+                <div class="main-navbar__group">
+                    <div class="mr-2 el-dropdown">
+                        <button type="button" id="write-btn"
+                            class="button el-button el-button--text text-muted nav-control"><i class="far fa-edit"
+                                data-toggle="tooltip" title="Write"></i></button>
+                        <ul id="write-dropdown" class="d-none nav-popo">
+                            <li><a href="publish/post">
+                                    <span class="mr-3"><i class="fas fa-pen"></i></span>Write post</a>
+                            </li>
+                            <li class="item-deivide"><a href="publish/series">
+                                    <span class="mr-3"><i class="fas fa-list-ul"></i></span>New Series</a>
+                                </a></li>
+                            <li class="item-deivide"><a href="question/ask">
+                                    <span class="mr-3"><i class="fas fa-question-circle"></i></i></span>Ask question</a>
+                                </a></li>
+                        </ul>
+
+
+                    </div>
+                    <span class="user-setting user-setting-btn nav-control" id="user-setting-btn">
+                        <div class="el-popover user-menu__popover border">
+                            <div class="user-menu__top d-flex justify-content-between">
+                                <img src="../img/avartar/avartar01.jpeg" alt="user-img">
+                                <div class="flex-fill overflow-hidden">
+                                    <div class="user-menu__info mb-3">
+                                        <div class="text-primary font-weight-bold text-truncate">Lộc Phúc Đinh
+                                        </div>
+                                        <div class="text-muted text-truncate">@sucanabo</div>
+                                    </div>
+                                    <a href="user/edit"
+                                        class="btn btn-primary text-light el-button--primary el.el-button--medium">Edit</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="user-menu__list">
+                                <div class="user-menu__item">
+                                    <a href="user/sucanabo" class="link link--plain">
+                                        <span><i class="fas fa-user"></i></span> Profile
+                                    </a>
+                                </div>
+                                <div class="user-menu__item">
+                                    <a href="user/sucanabo" class="link link--plain">
+                                        <span><i class="far fa-file-alt"></i></span> My Content
+                                    </a>
+                                </div>
+                                <div class="user-menu__item">
+                                    <a href="user/sucanabo" class="link link--plain">
+                                        <span><i class="fas fa-building"></i></span> Organizations
+                                    </a>
+                                </div>
+                                <div class="user-menu__item">
+                                    <a href="user/sucanabo" class="link link--plain">
+                                        <span><i class="fas fa-cog"></i></span> Preferences
+                                    </a>
+                                </div>
+                                <hr>
+                                <div class="user-menu__item">
+                                    <a href="user/sucanabo" class="link link--plain">
+                                        <span><i class="fas fa-sign-out-alt"></i></span> Sign out
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img src="../img/avartar/avartar01.jpeg" alt="current user" class="rounded-circle" id="avatar">
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="banner">
+            <a href="#" target="blank">
+                <div style="background-color: #15154F;">
+                    <div class="banner__container container w-100 px-0">
+                        <img src="../img/banner/banner002.png" alt="banner" class="banner__img">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="container post-body position-relative">
+            <div class="row">
+                <div class="p-0 col-lg-1">
+                    <div class="post-actions d-flex flex-column align-items-center mx-auto">
+                        <span class="avatar--side"><a href="/user"><img src="../img/avartar/pi.jpg" alt="avatar"
+                                    class="avatar--lg"></a></span>
+                        <div class="votes  votes--side post-actions__vote mb-1">
+                            <button class="icon-btn vote" data-toggle="tooltip" title="Up vote"><i
+                                    class="fas fa-caret-up voted"></i></button>
+                            <div class="points text-muted text-center voted">+13</div>
+                            <button class="icon-btn vote" data-toggle="tooltip" title="Down vote"><i
+                                    class="fas fa-caret-down"></i></button>
+                        </div>
+                        <div class="clip mb-4">
+                            <button class="el-button post-actions__clip el-button--default" data-toggle="tooltip"
+                                title="Clip this post"><i class="fas fa-paperclip"></i></button>
+                        </div>
+                        <div class="social-sharing mb-2 social-sharing--horizontal social-sharing--small">
+                            <a href="#" tooltip-placement="right" class="link link--muted"
+                                title="Share a link to this page on Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" tooltip-placement="right" class="link link--muted"
+                                title="Share a link to this page on Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-body__main col-lg-8">
+                    <article class="post-content">
+                        <header class="mb-3">
+                            <div class="d-flex align-items-start mb-5">
+                                <div class="post-author mb-2 mb-sm-0">
+
+                                    <a href="/user" class="d-fex mr-5"><img src="../img/avartar/pi.jpg" alt="pi-avt"
+                                            class="avatar avatar--lg"></a>
+                                    <div class="post-author__info mr-1">
+                                        <div class="d-flex">
+                                            <div class="d-lex mr-3">
+                                                <a href="/user" class="text-bold post-author__name">marykyle</a>
+                                                <span class="text-muted">@marykyle</span>
+                                            </div>
+                                            <div class="follow">
+                                                <button class="el-button el-button--mini-mini is-plain">Follow</button>
+                                            </div>
+                                        </div>
+                                        <div class="stats">
+                                            <span class="stat-item text-muted" data-toggle="tooltip"
+                                                title="Reputations: 12.9K"><i class="fas fa-star"></i>12.9K</span>
+                                            <span class="stat-item text-muted" data-toggle="tooltip"
+                                                title="Followers: 691"><i class="fas fa-user-plus"></i>691</span>
+                                            <span class="stat-item text-muted" data-toggle="tooltip"
+                                                title="Posts: 14"><i class="fas fa-pencil-alt"></i>52</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-meta d-flex flex-column flex-wrap align-items-sm-end">
+                                    <div class="text-muted">
+                                        Published about 1 hour ago <span>&nbsp;-&nbsp;2 min read</span>
+                                    </div>
+                                    <div class="stats">
+                                        <span class="stat-item text-muted" data-toggle="tooltip" title="Views: 1K"><i
+                                                class="far fa-eye mr-1"></i>1K</span>
+                                        <span class="stat-item text-muted" data-toggle="tooltip" title="Comments: 50"><i
+                                                class="fas fa-comments mr-1"></i>50</span>
+                                        <span class="stat-item text-muted" data-toggle="tooltip" title="Clips: 153"><i
+                                                class="fas fa-paperclip mr-1"></i></i>153</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="article-content__title">Article Title</h1>
+                        </header>
+                        <div class="d-md-flex align-items-top justify-content-between">
+                            <div class="tags">
+                                <a href="#" class="el-tag el-tag--info el-tag--mini">BEM</a>
+                                <a href="#" class="el-tag el-tag--info el-tag--mini">CSS3</a>
+                                <a href="#" class="el-tag el-tag--info el-tag--mini">HTML</a>
+                                <a href="#" class="el-tag el-tag--info el-tag--mini">Front-end</a>
+                            </div>
+                            <div class="post__menu">
+                                <div class="el-dropdown">
+                                    <button class="post-menu__btn el-button text-muted p-0 el-button--text">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <ul class="el-dropdown-menu el-popper publish-dropdown el-dropdown-menu--wide el-dropdown-menu--medium"
+                                        data-toggle="tooltip" title="Show more options">
+                                        <li><a href="publish/post">
+                                                <span class="mr-3"><i class="far fa-flag"></i></span>Report</a>
+                                        </li>
+                                        <li><a href="publish/series">
+                                                <span class="mr-3"><i class="far fa-plus-square"></i></span>Add to my
+                                                series</a>
+                                            </a></li>
+                                        <li><a href="question/ask">
+                                                <span class="mr-3"><i class="fas fa-magic"></i></span>Hightlighting code
+                                                blocks</a>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-contents article-content__body my-2 flex-fill">
+                            <h3>Content here</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum accusantium debitis
+                                minima! Praesentium eveniet aut, optio repellat, labore explicabo inventore iure unde
+                                porro vel sapiente illum quaerat excepturi voluptates.</p>
+                        </div>
+                        <br>
+                        <p title="People cannot distribute, remix, adapt, and build upon this workwithout author's permission (or as permitted by fair use)."
+                            class="license-text text-muted">All Rights Reverseed</p>
+                        <div class="post-footer d-flex align-items-center justify-content-end">
+                            <div class="social-sharing mr-1 social-sharing--vertical social-sharing--medium">
+                                <a href="#" tooltip-placement="right" class="link link--muted"
+                                    title="Share a link to this page on Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" tooltip-placement="right" class="link link--muted"
+                                    title="Share a link to this page on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="post__menu">
+                                <div class="el-dropdown">
+                                    <button class="post-menu__btn el-button text-muted p-0 el-button--text">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <ul class="el-dropdown-menu el-popper publish-dropdown el-dropdown-menu--wide el-dropdown-menu--medium"
+                                        data-toggle="tooltip" title="Show more options">
+                                        <li><a href="publish/post">
+                                                <span class="mr-3"><i class="far fa-flag"></i></span>Report</a>
+                                        </li>
+                                        <li><a href="publish/series">
+                                                <span class="mr-3"><i class="far fa-plus-square"></i></span>Add to my
+                                                series</a>
+                                            </a></li>
+                                        <li><a href="question/ask">
+                                                <span class="mr-3"><i class="fas fa-magic"></i></span>Hightlighting code
+                                                blocks</a>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="post-body__right col-lg-3 p-0">
+                    <div class="sticky-sidebar">
+                        <div class="sticky-sidebar__inner">
+                            <div class="post-index hidden-sm-down">
+                                <div class="section-title-line align-items-lg-baseline">
+                                    <h4 class="text-uppercase">Table of contents</h4>
+                                    <hr class="section-title__filler ml-3">
+                                </div>
+                                <ul class="content-outline list-unstyled mb-5">
+                                    <li class="content-outline__item content-outline__item--level-1">
+                                        <a href="#" class="link active">Content 1</a>
+                                    </li>
+
+                                    <li class="content-outline__item content-outline__item--level-1">
+                                        <a href="#" class="link">Content 2</a>
+                                    </li>
+                                    <li class="content-outline__item content-outline__item--level-1">
+                                        <a href="#" class="link">Content 3</a>
+                                    </li>
+                                    <li class="content-outline__item content-outline__item--level-2">
+                                        <a href="#" class="link">Content 3.1</a>
+                                    </li>
+                                    <li class="content-outline__item content-outline__item--level-3">
+                                        <a href="#" class="link">Content 3.1.1</a>
+                                    </li>
+                                </ul>
+                                <div class="main-feed__sidebar__top-organizations">
+                                    <div class="section-title d-flex justify-content-center align-items-lg-baseline">
+                                        <a href="/organizations">
+                                            <h4 class="text-uppercase m-0">Top organizations</h4>
+                                        </a>
+                                        <hr class="section-title__filler ml-3">
+                                    </div>
+                                    <div class="top-organization__container">
+                                        <div class="top-organization__item d-flex">
+                                            <div class="top-organization__img">
+                                                <a href="#"><img src="../img/organization/sunLab.jpg" alt="sunLab"></a>
+                                            </div>
+                                            <div class="top-organization__info">
+                                                <a href="#" class="word-break">Sun * R&D Lab</a>
+                                                <div class="stats text-nowrap">
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Posts: 30"><i class="fas fa-pencil-alt"></i>30</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Members: 300"><i class="fas fa-users"></i>300</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Followers: 100"><i
+                                                            class="fas fa-user-plus"></i>100</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="top-organization__item d-flex">
+                                            <div class="top-organization__img">
+                                                <a href="#"><img src="../img/organization/nghethuatcoding.png"
+                                                        alt="nghethuatcoding"></a>
+                                            </div>
+                                            <div class="top-organization__info">
+                                                <a href="#" class="word-break">Nghệ thuật Coding</a>
+                                                <div class="stats text-nowrap">
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Posts: 18"><i class="fas fa-pencil-alt"></i>18</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Members: 2"><i class="fas fa-users"></i>2</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Followers: 172"><i
+                                                            class="fas fa-user-plus"></i>172</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="top-organization__item d-flex">
+                                            <div class="top-organization__img">
+                                                <a href="#"><img src="../img/organization/sunCubeBranch.png"
+                                                        alt="sunCubeBranch"></a>
+                                            </div>
+                                            <div class="top-organization__info">
+                                                <a href="#" class="word-break">
+                                                    Sun* Cebu Branch / Awesome Ars Academia Cebu
+                                                </a>
+                                                <div class="stats text-nowrap">
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Posts: 14"><i class="fas fa-pencil-alt"></i>14</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Members: 21"><i class="fas fa-users"></i>21</span>
+                                                    <span class="stat-item text-muted" data-toggle="tooltip"
+                                                        title="Followers: 51"><i class="fas fa-user-plus"></i>51</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-recommendations bg-light">
+            <div class="container py-2">
+                <div class="post-section">
+                    <div class="post-section__related">
+                        <h3 class="post-section__title">Related</h3>
+                        <div class="post-section__container">
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-section__more">
+                        <h3 class="post-section__title">More from author</h3>
+                        <div class="post-section__container">
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-section__item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <div class="post-card__title "><a href="#" class="link link--plain">Tìm hiểu
+                                                về Amazon web services</a></div>
+                                        <div class="post-card__author"><a class="link text-primary" href="/user">Nguyen
+                                                Quang Huy</a></div>
+                                        <span class="text-muted"> 12 min read</span>
+                                        <div class="d-flex">
+                                            <div class="stats">
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Views: 1K"><i class="far fa-eye mr-1"></i>1K</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Clips: 153"><i
+                                                        class="fas fa-paperclip mr-1"></i></i>153</span>
+                                                <span class="stat-item text-muted" data-toggle="tooltip"
+                                                    title="Comments: 50"><i class="fas fa-comments mr-1"></i>50</span>
+                                            </div>
+                                            <div class="points">
+                                                <div class="carets mr-2">
+                                                    <i class="fas fa-caret-up voted"></i>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                                <span class="text-muted">234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment-thread">
+                    <h3 class="post-section__title">Comments</h3>
+                    <div class="comment__container">
+                        <div class="comment__tabs">
+                            <ul class="tab__list">
+                                <li id="default-comment__tab" class="tab-item active"
+                                    onclick="openTab(event,'write-tab')">Write</li>
+                                <li class="tab-item" onclick="openTab(event,'preview-tab')">Preview</li>
+                            </ul>
+                            <div class="tab__content">
+                                <div class="tab__pane" id="write-tab">
+                                    <div class="comment__form">
+                                        <div class=" avatar--md">
+                                            <img src="../img/avartar/pi.jpg" alt="pi">
+                                        </div>
+                                        <div class="editor-lite">
+                                            <pre>
+                                                Them editor 
+                                                Xu li post comment khi chua nhap noi dung
+                                                nhap noi dung roi thi noi dung xuat hien o preview ( xem truoc )
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab__pane" id="preview-tab">
+                                    <div class="comment__form">
+                                        <div class="comment__review">
+                                            Preview comment ne~~
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-comment d-flex justify-content-end">
+                                    <a href="#"
+                                        class="post-comment-btn el-button btn btn-sm btn-primary el-button--primary is-disabled">Post
+                                        comment</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-list">
+                        <div class="comment-item">
+                            <div class="comment-item__info">
+                                <div class="user--inline d-inline-flex flex-shrink-0">
+                                    <a href="" class="d-flex mr-3">
+                                        <div class="d-inline-block avatar--sm">
+                                            <img src="../img/avartar/pi.jpg" alt="avatar">
+                                        </div>
+                                    </a>
+                                    <span>
+                                        <a href="/user" class="mr-3 el-popover__reference">Dinh Loc Phuc</a>
+                                    </span>
+                                    <span class="text-muted">@sucanabo</span>
+                                </div>
+                                <div class="comment__time">
+                                    <span>in less than a minute</span>
+                                </div>
+                            </div>
+                            <div class="comment-item__content">
+                                render ra comment dc editor
+                            </div>
+                            <div class="comment-item__interactive">
+                                <div class="d-flex text-muted">
+                                    <div class="score">
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-up  voted-up"></i></i></button>
+                                        <span class="comment-points text-muted">0</span>
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                    <div class="text-muted mr-2 ml-2">|</div>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Reply"><span>Reply</span></a>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Share a link to this comment"><span>Share</span></a>
+                                    <div class="comment__menu ml-05 el-dropdown">
+                                        <span class="el-dropdown-selfdefine"><i class="fas fa-ellipsis-h icon--small"></i></span>
+                                        <ul class="el-dropdown-menu el-popper publish-dropdown el-dropdown-menu--wide el-dropdown-menu--medium"
+                                            data-toggle="tooltip" title="Show more options">
+                                            <li><a href="publish/post">
+                                                    <span class="mr-3"><i class="far fa-flag"></i></span>Report</a>
+                                            </li>
+                                            <li><a href="question/ask">
+                                                    <span class="mr-3"><i class="fas fa-magic"></i></span>Hightlighting code
+                                                    blocks</a>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item__info">
+                                <div class="user--inline d-inline-flex flex-shrink-0">
+                                    <a href="" class="d-flex mr-3">
+                                        <div class="d-inline-block avatar--sm">
+                                            <img src="../img/avartar/pi.jpg" alt="avatar">
+                                        </div>
+                                    </a>
+                                    <span>
+                                        <a href="/user" class="mr-3 el-popover__reference">Dinh Loc Phuc</a>
+                                    </span>
+                                    <span class="text-muted">@sucanabo</span>
+                                </div>
+                                <div class="comment__time">
+                                    <span>in less than a minute</span>
+                                </div>
+                            </div>
+                            <div class="comment-item__content">
+                                render ra comment dc editor
+                            </div>
+                            <div class="comment-item__interactive">
+                                <div class="d-flex text-muted">
+                                    <div class="score">
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-up"></i></i></button>
+                                        <span class="comment-points text-muted">0</span>
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-down  voted-down"></i></button>
+                                    </div>
+                                    <div class="text-muted mr-2 ml-2">|</div>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Reply"><span>Reply</span></a>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Share a link to this comment"><span>Share</span></a>
+                                    <div class="comment__menu ml-05 el-dropdown">
+                                        <span class="el-dropdown-selfdefine"><i class="fas fa-ellipsis-h icon--small"></i></span>
+                                        <ul class="el-dropdown-menu el-popper publish-dropdown el-dropdown-menu--wide el-dropdown-menu--medium"
+                                            data-toggle="tooltip" title="Show more options">
+                                            <li><a href="publish/post">
+                                                    <span class="mr-3"><i class="far fa-flag"></i></span>Report</a>
+                                            </li>
+                                            <li><a href="question/ask">
+                                                    <span class="mr-3"><i class="fas fa-magic"></i></span>Hightlighting code
+                                                    blocks</a>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item__info">
+                                <div class="user--inline d-inline-flex flex-shrink-0">
+                                    <a href="" class="d-flex mr-3">
+                                        <div class="d-inline-block avatar--sm">
+                                            <img src="../img/avartar/pi.jpg" alt="avatar">
+                                        </div>
+                                    </a>
+                                    <span>
+                                        <a href="/user" class="mr-3 el-popover__reference">Dinh Loc Phuc</a>
+                                    </span>
+                                    <span class="text-muted">@sucanabo</span>
+                                </div>
+                                <div class="comment__time">
+                                    <span>in less than a minute</span>
+                                </div>
+                            </div>
+                            <div class="comment-item__content">
+                                render ra comment dc editor
+                            </div>
+                            <div class="comment-item__interactive">
+                                <div class="d-flex text-muted">
+                                    <div class="score">
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-up "></i></i></button>
+                                        <span class="comment-points text-muted">0</span>
+                                        <button class="icon-btn vote"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                    <div class="text-muted mr-2 ml-2">|</div>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Reply"><span>Reply</span></a>
+                                    <a href="" class="mr-3 cursor-pointer link" data-toggle="tooltip" title="Share a link to this comment"><span>Share</span></a>
+                                    <div class="comment__menu ml-05 el-dropdown">
+                                        <span class="el-dropdown-selfdefine"><i class="fas fa-ellipsis-h icon--small"></i></span>
+                                        <ul class="el-dropdown-menu el-popper publish-dropdown el-dropdown-menu--wide el-dropdown-menu--medium"
+                                            data-toggle="tooltip" title="Show more options">
+                                            <li><a href="publish/post">
+                                                    <span class="mr-3"><i class="far fa-flag"></i></span>Report</a>
+                                            </li>
+                                            <li><a href="question/ask">
+                                                    <span class="mr-3"><i class="fas fa-magic"></i></span>Hightlighting code
+                                                    blocks</a>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer" class="bg-dark">
+            <div class="container pt-2">
+                <div class="row">
+                    <div class="mb-1 mb-md-0 col-md-4">
+                        <h4 class="footer__header">resources</h4>
+                        <ul class="list-unstyled footer__links resources">
+                            <li><a href="/posts" class="link active">Post</a></li>
+                            <li><a href="/posts" class="link active">Organizations</a></li>
+                            <li><a href="/posts" class="link active">Questions</a></li>
+                            <li><a href="/posts" class="link active">Tags</a></li>
+                            <li><a href="/posts" class="link active">Videos</a></li>
+                            <li><a href="/posts" class="link active">Authors</a></li>
+                            <li><a href="/posts" class="link active">Discussions</a></li>
+                            <li><a href="/posts" class="link active">Recommend System</a></li>
+                            <li><a href="/posts" class="link active">Tools</a></li>
+                            <li><a href="/posts" class="link active">Machine Learning</a></li>
+                            <li><a href="/posts" class="link active">Discussions</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="mb-1 mb-md-0 col-md-3 offset-xl-1">
+                        <h4 class="footer__header">Services</h4>
+                        <ul class="list-unstyled footer__links service-badges">
+                            <li class="footer__links__external-link"><a href="/posts" class="link"><img
+                                        src="../img/services/viblo-code.svg" class="link-icon" alt="Code">Viblo Code</a>
+                            </li>
+                            <li class="footer__links__external-link"><a href="/posts" class="link"><img
+                                        src="../img/services/viblo-cv.svg" class="link-icon" alt="CV">Viblo CV</a></li>
+                            <li class="footer__links__external-link"><a href="/posts" class="link"><img
+                                        src="../img/services/viblo-ctf.png" class="link-icon" alt="CTF">Viblo CTF</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-1 mb-md-0 col-md-3 offset-md-1">
+                        <h4 class="footer__header">Mobile App</h4>
+                        <div class="d-flex mobile-app-badges mb-05">
+                            <div class="d-flex flex-md-column justify-content-between flex-wrap">
+                                <a class="d-block"
+                                    href="https://play.google.com/store/apps/details?id=com.framgia.viblo.android.prod"><img
+                                        class="play-store-badge"
+                                        src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                                        target="blank" alt="gg"></a>
+                                <a class="d-block" href="https://itunes.apple.com/us/app/viblo/id1365286437"><img
+                                        class="app-store-badge" src="https://cdn.viblo.asia/_nuxt/img/2928664.svg"
+                                        target="blank" alt="apple-store"></a>
+                            </div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAIAAAAkfEPpAAACEklEQVR42u3aUY6DMAwFQO5/6e4JKhXF7yUL488KBZhEcm1zfUQ9LgTQoYsC+hWIb+t/faCb19x9hp9Q0g7QoUOHXkZfShRDL/wLxMp9p9a5vT506NChb0RPJ8yVNaeSc9MBOnTo0N+CvgKdKI6gQ4cOHfoMysrzJBpz0KFDh/4E9EQimmqcJYqmR3UZoUOHDn1jgjrt98d+DQAdOvTHozcjsZGJxlzk3aFDhw69jN5Mqol10odjrDiCDh069DL6yjXpYfTUvarFIHTo0KEX0KcGAlMD6MSgIz0Qv10cQYcOHXoBfaphlG5UNRPs2AGFDh069I3oTaxE46xZfI19DQAdOnTog+iJwmQlwSaKo+ahgQ4dOvTT0acKimaynTpMS4cAOnTo0AvozRdrbmT6cNz+EwEdOnToG9F3DSjSSb45DIEOHTr0NnpiEJwoRtKIiaEKdOjQoZ+Inn7QxMZMDVjGng06dOjQD0FPFDVTiTqNODU0hw4dOvRT0CMNoOKHPitF1timQocOHXoBPR1TELuG6ZGGF3To0KEXvk+fiubQ+YRCb+nfC3To0KGH0BMJMz3QmDociQIQOnTo0E9BTyfM9NAg0fBa2jzo0KFDfxj6rmsSGwkdOnTob0dPI6Ybdo8qjqBDh/4q9PRgYaqQSQ/QoUOHDv2/oqcbQFPJNp14E4cJOnTo0BvoohPQoUMXofgD+J8kMHoXlkcAAAAASUVORK5CYII="
+                                alt="QR" class="qr hidden-md-down">
+                        </div>
+                        <h4 class="footer__header">Links</h4>
+                        <ul class="list-unstyled footer__social-links">
+                            <li class="footer__socail-links__external-link">
+                                <a href="" class="link"><i class="fab fa-facebook-f link-icon"></i></a>
+                            </li>
+                            <li class="footer__socail-links__external-link">
+                                <a href="" class="link"><i class="fab fa-github link-icon"></i></a>
+                            </li>
+                            <li class="footer__socail-links__external-link">
+                                <a href="" class="link"><i class="fab fa-chrome link-icon"></i></a>
+                            </li>
+                            <li class="footer__socail-links__external-link">
+                                <a href="" class="link"><i class="fab fa-react link-icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="footer__divider">
+                <div class="row py-1">
+                    <div class="col-xs-12 col-sm-6 col-lg-6 col-xl-7">
+                        <p class="copyright">© 2020 <b>Viblo</b>. All rights reserved.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-6 col-xl-5">
+                        <ul class="list-unstyled d-flex justify-content-between flex-wrap">
+                            <li class="mb-3"><a href="" target="blank" class="link">About Us</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">Feedback</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">Help</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">FAQs</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">RSS</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">Term</a></li>
+                            <li class="mb-3"><a href="" target="blank" class="link">
+                                    <img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=41818fcd-5a60-4504-867a-38fde606354e"
+                                        alt="DMA">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../vendor/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/"></script>
+</body>
+
+</html>

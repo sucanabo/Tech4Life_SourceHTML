@@ -67,3 +67,19 @@ function goToTop(){
   }
   document.getElementById("default-comment__tab").click();
 
+//====================CKEDITOR===========================
+ClassicEditor
+  .create( document.querySelector( '#basic__editor' ) )
+  .catch( error => {
+      console.error( error );
+  } );
+  ClassicEditor
+  .create( document.querySelector( '#post__editor' ) )
+  .catch( error => {
+      console.error( error );
+  } );
+
+//====================Editor==============================
+//Comment - PREVIEW
+var comment = document.querySelector('.ck.ck-content p');
+var preview = document.querySelector('.comment__container #comment__review');

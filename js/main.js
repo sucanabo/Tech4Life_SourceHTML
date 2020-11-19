@@ -64,8 +64,16 @@ function goToTop(){
     }
     document.getElementById(tab).style.display = "block";
     e.target.className += " active";
+    const previewTab = document.querySelector(".comment-thread #previewTab");
+    if (e.target.getAttribute('id') == previewTab.getAttribute('id')) {
+
+    const commentDOMContent = document.getElementsByClassName("ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred")[0];
+    document.querySelector("#preview-tab").append(commentDOMContent);
+    console.log(commentDOMContent);
+    }
+
   }
-  document.getElementById("default-comment__tab").click();
+  //document.getElementById("default-comment__tab").click();
 
 //====================CKEDITOR===========================
 ClassicEditor
@@ -73,11 +81,13 @@ ClassicEditor
   .catch( error => {
       console.error( error );
   } );
-  ClassicEditor
-  .create( document.querySelector( '#post__editor' ) )
+
+ClassicEditor
+  .create( document.querySelector("#post__editor"))
   .catch( error => {
-      console.error( error );
-  } );
+    console.log(error);
+});
+
 
 //====================Editor==============================
 //Comment - PREVIEW
